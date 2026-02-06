@@ -1,0 +1,154 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: package IPython</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>IPython</strong></big></big> (version 8.37.0)</font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:/home/jules/Training/Playground/.venv/lib64/python3.10/site-packages/IPython/__init__.py">/home/jules/Training/Playground/.venv/lib64/python3.10/site-packages/IPython/__init__.py</a></font></td></tr></table>
+    <p><tt>IPython:&nbsp;tools&nbsp;for&nbsp;interactive&nbsp;and&nbsp;parallel&nbsp;computing&nbsp;in&nbsp;Python.<br>
+&nbsp;<br>
+<a href="https://ipython.org">https://ipython.org</a></tt></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Package Contents</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="IPython.__main__.html">__main__</a><br>
+<a href="IPython.conftest.html">conftest</a><br>
+<a href="IPython.consoleapp.html">consoleapp</a><br>
+<a href="IPython.core.html"><strong>core</strong>&nbsp;(package)</a><br>
+</td><td width="25%" valign=top><a href="IPython.display.html">display</a><br>
+<a href="IPython.extensions.html"><strong>extensions</strong>&nbsp;(package)</a><br>
+<a href="IPython.external.html"><strong>external</strong>&nbsp;(package)</a><br>
+<a href="IPython.lib.html"><strong>lib</strong>&nbsp;(package)</a><br>
+</td><td width="25%" valign=top><a href="IPython.paths.html">paths</a><br>
+<a href="IPython.sphinxext.html"><strong>sphinxext</strong>&nbsp;(package)</a><br>
+<a href="IPython.terminal.html"><strong>terminal</strong>&nbsp;(package)</a><br>
+<a href="IPython.testing.html"><strong>testing</strong>&nbsp;(package)</a><br>
+</td><td width="25%" valign=top><a href="IPython.utils.html"><strong>utils</strong>&nbsp;(package)</a><br>
+</td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#eeaa77">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Functions</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#eeaa77"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt><a name="-embed"><strong>embed</strong></a>(*, header='', compile_flags=None, **kwargs)</dt><dd><tt>Call&nbsp;this&nbsp;to&nbsp;embed&nbsp;IPython&nbsp;at&nbsp;the&nbsp;current&nbsp;point&nbsp;in&nbsp;your&nbsp;program.<br>
+&nbsp;<br>
+The&nbsp;first&nbsp;invocation&nbsp;of&nbsp;this&nbsp;will&nbsp;create&nbsp;a&nbsp;:class:`terminal.embed.InteractiveShellEmbed`<br>
+instance&nbsp;and&nbsp;then&nbsp;call&nbsp;it.&nbsp;&nbsp;Consecutive&nbsp;calls&nbsp;just&nbsp;call&nbsp;the&nbsp;already<br>
+created&nbsp;instance.<br>
+&nbsp;<br>
+If&nbsp;you&nbsp;don't&nbsp;want&nbsp;the&nbsp;kernel&nbsp;to&nbsp;initialize&nbsp;the&nbsp;namespace<br>
+from&nbsp;the&nbsp;scope&nbsp;of&nbsp;the&nbsp;surrounding&nbsp;function,<br>
+and/or&nbsp;you&nbsp;want&nbsp;to&nbsp;load&nbsp;full&nbsp;IPython&nbsp;configuration,<br>
+you&nbsp;probably&nbsp;want&nbsp;`IPython.<a href="#-start_ipython">start_ipython</a>()`&nbsp;instead.<br>
+&nbsp;<br>
+Here&nbsp;is&nbsp;a&nbsp;simple&nbsp;example::<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;from&nbsp;IPython&nbsp;import&nbsp;embed<br>
+&nbsp;&nbsp;&nbsp;&nbsp;a&nbsp;=&nbsp;10<br>
+&nbsp;&nbsp;&nbsp;&nbsp;b&nbsp;=&nbsp;20<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="#-embed">embed</a>(header='First&nbsp;time')<br>
+&nbsp;&nbsp;&nbsp;&nbsp;c&nbsp;=&nbsp;30<br>
+&nbsp;&nbsp;&nbsp;&nbsp;d&nbsp;=&nbsp;40<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="#-embed">embed</a>()<br>
+&nbsp;<br>
+Parameters<br>
+----------<br>
+&nbsp;<br>
+header&nbsp;:&nbsp;str<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Optional&nbsp;header&nbsp;string&nbsp;to&nbsp;print&nbsp;at&nbsp;startup.<br>
+compile_flags<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Passed&nbsp;to&nbsp;the&nbsp;`compile_flags`&nbsp;parameter&nbsp;of&nbsp;:py:meth:`terminal.embed.InteractiveShellEmbed.mainloop()`,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;which&nbsp;is&nbsp;called&nbsp;when&nbsp;the&nbsp;:class:`terminal.embed.InteractiveShellEmbed`&nbsp;instance&nbsp;is&nbsp;called.<br>
+**kwargs&nbsp;:&nbsp;various,&nbsp;optional<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Any&nbsp;other&nbsp;kwargs&nbsp;will&nbsp;be&nbsp;passed&nbsp;to&nbsp;the&nbsp;:class:`terminal.embed.InteractiveShellEmbed`&nbsp;constructor.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Full&nbsp;customization&nbsp;can&nbsp;be&nbsp;done&nbsp;by&nbsp;passing&nbsp;a&nbsp;traitlets&nbsp;:class:`Config`&nbsp;in&nbsp;as&nbsp;the<br>
+&nbsp;&nbsp;&nbsp;&nbsp;`config`&nbsp;argument&nbsp;(see&nbsp;:ref:`configure_start_ipython`&nbsp;and&nbsp;:ref:`terminal_options`).</tt></dd></dl>
+ <dl><dt><a name="-embed_kernel"><strong>embed_kernel</strong></a>(module=None, local_ns=None, **kwargs)</dt><dd><tt>Embed&nbsp;and&nbsp;start&nbsp;an&nbsp;IPython&nbsp;kernel&nbsp;in&nbsp;a&nbsp;given&nbsp;scope.<br>
+&nbsp;<br>
+If&nbsp;you&nbsp;don't&nbsp;want&nbsp;the&nbsp;kernel&nbsp;to&nbsp;initialize&nbsp;the&nbsp;namespace<br>
+from&nbsp;the&nbsp;scope&nbsp;of&nbsp;the&nbsp;surrounding&nbsp;function,<br>
+and/or&nbsp;you&nbsp;want&nbsp;to&nbsp;load&nbsp;full&nbsp;IPython&nbsp;configuration,<br>
+you&nbsp;probably&nbsp;want&nbsp;`IPython.<a href="#-start_kernel">start_kernel</a>()`&nbsp;instead.<br>
+&nbsp;<br>
+Parameters<br>
+----------<br>
+module&nbsp;:&nbsp;types.ModuleType,&nbsp;optional<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;module&nbsp;to&nbsp;load&nbsp;into&nbsp;IPython&nbsp;globals&nbsp;(default:&nbsp;caller)<br>
+local_ns&nbsp;:&nbsp;dict,&nbsp;optional<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;namespace&nbsp;to&nbsp;load&nbsp;into&nbsp;IPython&nbsp;user&nbsp;namespace&nbsp;(default:&nbsp;caller)<br>
+**kwargs&nbsp;:&nbsp;various,&nbsp;optional<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Further&nbsp;keyword&nbsp;args&nbsp;are&nbsp;relayed&nbsp;to&nbsp;the&nbsp;IPKernelApp&nbsp;constructor,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;such&nbsp;as&nbsp;`config`,&nbsp;a&nbsp;traitlets&nbsp;:class:`Config`&nbsp;object&nbsp;(see&nbsp;:ref:`configure_start_ipython`),<br>
+&nbsp;&nbsp;&nbsp;&nbsp;allowing&nbsp;configuration&nbsp;of&nbsp;the&nbsp;kernel.&nbsp;&nbsp;Will&nbsp;only&nbsp;have&nbsp;an&nbsp;effect<br>
+&nbsp;&nbsp;&nbsp;&nbsp;on&nbsp;the&nbsp;first&nbsp;embed_kernel&nbsp;call&nbsp;for&nbsp;a&nbsp;given&nbsp;process.</tt></dd></dl>
+ <dl><dt><a name="-start_ipython"><strong>start_ipython</strong></a>(argv=None, **kwargs)</dt><dd><tt>Launch&nbsp;a&nbsp;normal&nbsp;IPython&nbsp;instance&nbsp;(as&nbsp;opposed&nbsp;to&nbsp;embedded)<br>
+&nbsp;<br>
+`IPython.<a href="#-embed">embed</a>()`&nbsp;puts&nbsp;a&nbsp;shell&nbsp;in&nbsp;a&nbsp;particular&nbsp;calling&nbsp;scope,<br>
+such&nbsp;as&nbsp;a&nbsp;function&nbsp;or&nbsp;method&nbsp;for&nbsp;debugging&nbsp;purposes,<br>
+which&nbsp;is&nbsp;often&nbsp;not&nbsp;desirable.<br>
+&nbsp;<br>
+`<a href="#-start_ipython">start_ipython</a>()`&nbsp;does&nbsp;full,&nbsp;regular&nbsp;IPython&nbsp;initialization,<br>
+including&nbsp;loading&nbsp;startup&nbsp;files,&nbsp;configuration,&nbsp;etc.<br>
+much&nbsp;of&nbsp;which&nbsp;is&nbsp;skipped&nbsp;by&nbsp;`<a href="#-embed">embed</a>()`.<br>
+&nbsp;<br>
+This&nbsp;is&nbsp;a&nbsp;public&nbsp;API&nbsp;method,&nbsp;and&nbsp;will&nbsp;survive&nbsp;implementation&nbsp;changes.<br>
+&nbsp;<br>
+Parameters<br>
+----------<br>
+argv&nbsp;:&nbsp;list&nbsp;or&nbsp;None,&nbsp;optional<br>
+&nbsp;&nbsp;&nbsp;&nbsp;If&nbsp;unspecified&nbsp;or&nbsp;None,&nbsp;IPython&nbsp;will&nbsp;parse&nbsp;command-line&nbsp;options&nbsp;from&nbsp;sys.argv.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;To&nbsp;prevent&nbsp;any&nbsp;command-line&nbsp;parsing,&nbsp;pass&nbsp;an&nbsp;empty&nbsp;list:&nbsp;`argv=[]`.<br>
+user_ns&nbsp;:&nbsp;dict,&nbsp;optional<br>
+&nbsp;&nbsp;&nbsp;&nbsp;specify&nbsp;this&nbsp;dictionary&nbsp;to&nbsp;initialize&nbsp;the&nbsp;IPython&nbsp;user&nbsp;namespace&nbsp;with&nbsp;particular&nbsp;values.<br>
+**kwargs&nbsp;:&nbsp;various,&nbsp;optional<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Any&nbsp;other&nbsp;kwargs&nbsp;will&nbsp;be&nbsp;passed&nbsp;to&nbsp;the&nbsp;Application&nbsp;constructor,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;such&nbsp;as&nbsp;`config`,&nbsp;a&nbsp;traitlets&nbsp;:class:`Config`&nbsp;object&nbsp;(see&nbsp;:ref:`configure_start_ipython`),<br>
+&nbsp;&nbsp;&nbsp;&nbsp;allowing&nbsp;configuration&nbsp;of&nbsp;the&nbsp;instance&nbsp;(see&nbsp;:ref:`terminal_options`).</tt></dd></dl>
+ <dl><dt><a name="-start_kernel"><strong>start_kernel</strong></a>(argv=None, **kwargs)</dt><dd><tt>Launch&nbsp;a&nbsp;normal&nbsp;IPython&nbsp;kernel&nbsp;instance&nbsp;(as&nbsp;opposed&nbsp;to&nbsp;embedded)<br>
+&nbsp;<br>
+`IPython.<a href="#-embed_kernel">embed_kernel</a>()`&nbsp;puts&nbsp;a&nbsp;shell&nbsp;in&nbsp;a&nbsp;particular&nbsp;calling&nbsp;scope,<br>
+such&nbsp;as&nbsp;a&nbsp;function&nbsp;or&nbsp;method&nbsp;for&nbsp;debugging&nbsp;purposes,<br>
+which&nbsp;is&nbsp;often&nbsp;not&nbsp;desirable.<br>
+&nbsp;<br>
+`<a href="#-start_kernel">start_kernel</a>()`&nbsp;does&nbsp;full,&nbsp;regular&nbsp;IPython&nbsp;initialization,<br>
+including&nbsp;loading&nbsp;startup&nbsp;files,&nbsp;configuration,&nbsp;etc.<br>
+much&nbsp;of&nbsp;which&nbsp;is&nbsp;skipped&nbsp;by&nbsp;`<a href="#-embed_kernel">embed_kernel</a>()`.<br>
+&nbsp;<br>
+Parameters<br>
+----------<br>
+argv&nbsp;:&nbsp;list&nbsp;or&nbsp;None,&nbsp;optional<br>
+&nbsp;&nbsp;&nbsp;&nbsp;If&nbsp;unspecified&nbsp;or&nbsp;None,&nbsp;IPython&nbsp;will&nbsp;parse&nbsp;command-line&nbsp;options&nbsp;from&nbsp;sys.argv.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;To&nbsp;prevent&nbsp;any&nbsp;command-line&nbsp;parsing,&nbsp;pass&nbsp;an&nbsp;empty&nbsp;list:&nbsp;`argv=[]`.<br>
+user_ns&nbsp;:&nbsp;dict,&nbsp;optional<br>
+&nbsp;&nbsp;&nbsp;&nbsp;specify&nbsp;this&nbsp;dictionary&nbsp;to&nbsp;initialize&nbsp;the&nbsp;IPython&nbsp;user&nbsp;namespace&nbsp;with&nbsp;particular&nbsp;values.<br>
+**kwargs&nbsp;:&nbsp;various,&nbsp;optional<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Any&nbsp;other&nbsp;kwargs&nbsp;will&nbsp;be&nbsp;passed&nbsp;to&nbsp;the&nbsp;Application&nbsp;constructor,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;such&nbsp;as&nbsp;`config`,&nbsp;a&nbsp;traitlets&nbsp;:class:`Config`&nbsp;object&nbsp;(see&nbsp;:ref:`configure_start_ipython`),<br>
+&nbsp;&nbsp;&nbsp;&nbsp;allowing&nbsp;configuration&nbsp;of&nbsp;the&nbsp;kernel.</tt></dd></dl>
+</td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#55aa55">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Data</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#55aa55"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><strong>__all__</strong> = ['start_ipython', 'embed', 'start_kernel', 'embed_kernel']<br>
+<strong>__license__</strong> = 'BSD-3-Clause'<br>
+<strong>__patched_cves__</strong> = {'CVE-2022-21699', 'CVE-2023-24816'}</td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#7799ee">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Author</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#7799ee"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%">The&nbsp;IPython&nbsp;Development&nbsp;Team&nbsp;&lt;ipython-dev@python.org&gt;</td></tr></table>
+</body></html>

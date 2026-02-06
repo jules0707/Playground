@@ -1,0 +1,292 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: package scipy</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>scipy</strong></big></big> (version 1.15.3)</font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:/home/jules/Training/Playground/.venv/lib64/python3.10/site-packages/scipy/__init__.py">/home/jules/Training/Playground/.venv/lib64/python3.10/site-packages/scipy/__init__.py</a></font></td></tr></table>
+    <p><tt>SciPy:&nbsp;A&nbsp;scientific&nbsp;computing&nbsp;package&nbsp;for&nbsp;Python<br>
+================================================<br>
+&nbsp;<br>
+Documentation&nbsp;is&nbsp;available&nbsp;in&nbsp;the&nbsp;docstrings&nbsp;and<br>
+online&nbsp;at&nbsp;<a href="https://docs.scipy.org">https://docs.scipy.org</a>.<br>
+&nbsp;<br>
+Subpackages<br>
+-----------<br>
+Using&nbsp;any&nbsp;of&nbsp;these&nbsp;subpackages&nbsp;requires&nbsp;an&nbsp;explicit&nbsp;import.&nbsp;For&nbsp;example,<br>
+``import&nbsp;scipy.cluster``.<br>
+&nbsp;<br>
+::<br>
+&nbsp;<br>
+&nbsp;cluster&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;---&nbsp;Vector&nbsp;Quantization&nbsp;/&nbsp;Kmeans<br>
+&nbsp;constants&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;---&nbsp;Physical&nbsp;and&nbsp;mathematical&nbsp;constants&nbsp;and&nbsp;units<br>
+&nbsp;datasets&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;---&nbsp;Dataset&nbsp;methods<br>
+&nbsp;differentiate&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;---&nbsp;Finite&nbsp;difference&nbsp;differentiation&nbsp;tools<br>
+&nbsp;fft&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;---&nbsp;Discrete&nbsp;Fourier&nbsp;transforms<br>
+&nbsp;fftpack&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;---&nbsp;Legacy&nbsp;discrete&nbsp;Fourier&nbsp;transforms<br>
+&nbsp;integrate&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;---&nbsp;Integration&nbsp;routines<br>
+&nbsp;interpolate&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;---&nbsp;Interpolation&nbsp;Tools<br>
+&nbsp;io&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;---&nbsp;Data&nbsp;input&nbsp;and&nbsp;output<br>
+&nbsp;linalg&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;---&nbsp;Linear&nbsp;algebra&nbsp;routines<br>
+&nbsp;ndimage&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;---&nbsp;N-D&nbsp;image&nbsp;package<br>
+&nbsp;odr&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;---&nbsp;Orthogonal&nbsp;Distance&nbsp;Regression<br>
+&nbsp;optimize&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;---&nbsp;Optimization&nbsp;Tools<br>
+&nbsp;signal&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;---&nbsp;Signal&nbsp;Processing&nbsp;Tools<br>
+&nbsp;sparse&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;---&nbsp;Sparse&nbsp;Matrices<br>
+&nbsp;spatial&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;---&nbsp;Spatial&nbsp;data&nbsp;structures&nbsp;and&nbsp;algorithms<br>
+&nbsp;special&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;---&nbsp;Special&nbsp;functions<br>
+&nbsp;stats&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;---&nbsp;Statistical&nbsp;Functions<br>
+&nbsp;<br>
+Public&nbsp;API&nbsp;in&nbsp;the&nbsp;main&nbsp;SciPy&nbsp;namespace<br>
+--------------------------------------<br>
+::<br>
+&nbsp;<br>
+&nbsp;__version__&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;---&nbsp;SciPy&nbsp;version&nbsp;string<br>
+&nbsp;<a href="#LowLevelCallable">LowLevelCallable</a>&nbsp;&nbsp;---&nbsp;Low-level&nbsp;callback&nbsp;function<br>
+&nbsp;show_config&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;---&nbsp;Show&nbsp;scipy&nbsp;build&nbsp;configuration<br>
+&nbsp;test&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;---&nbsp;Run&nbsp;scipy&nbsp;unittests</tt></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Package Contents</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="scipy.__config__.html">__config__</a><br>
+<a href="scipy._distributor_init.html">_distributor_init</a><br>
+<a href="scipy._lib.html"><strong>_lib</strong>&nbsp;(package)</a><br>
+<a href="scipy.cluster.html"><strong>cluster</strong>&nbsp;(package)</a><br>
+<a href="scipy.conftest.html">conftest</a><br>
+<a href="scipy.constants.html"><strong>constants</strong>&nbsp;(package)</a><br>
+</td><td width="25%" valign=top><a href="scipy.datasets.html"><strong>datasets</strong>&nbsp;(package)</a><br>
+<a href="scipy.differentiate.html"><strong>differentiate</strong>&nbsp;(package)</a><br>
+<a href="scipy.fft.html"><strong>fft</strong>&nbsp;(package)</a><br>
+<a href="scipy.fftpack.html"><strong>fftpack</strong>&nbsp;(package)</a><br>
+<a href="scipy.integrate.html"><strong>integrate</strong>&nbsp;(package)</a><br>
+<a href="scipy.interpolate.html"><strong>interpolate</strong>&nbsp;(package)</a><br>
+</td><td width="25%" valign=top><a href="scipy.io.html"><strong>io</strong>&nbsp;(package)</a><br>
+<a href="scipy.linalg.html"><strong>linalg</strong>&nbsp;(package)</a><br>
+<a href="scipy.misc.html"><strong>misc</strong>&nbsp;(package)</a><br>
+<a href="scipy.ndimage.html"><strong>ndimage</strong>&nbsp;(package)</a><br>
+<a href="scipy.odr.html"><strong>odr</strong>&nbsp;(package)</a><br>
+<a href="scipy.optimize.html"><strong>optimize</strong>&nbsp;(package)</a><br>
+</td><td width="25%" valign=top><a href="scipy.signal.html"><strong>signal</strong>&nbsp;(package)</a><br>
+<a href="scipy.sparse.html"><strong>sparse</strong>&nbsp;(package)</a><br>
+<a href="scipy.spatial.html"><strong>spatial</strong>&nbsp;(package)</a><br>
+<a href="scipy.special.html"><strong>special</strong>&nbsp;(package)</a><br>
+<a href="scipy.stats.html"><strong>stats</strong>&nbsp;(package)</a><br>
+<a href="scipy.version.html">version</a><br>
+</td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ee77aa">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Classes</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#ee77aa"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl>
+<dt><font face="helvetica, arial"><a href="builtins.html#tuple">builtins.tuple</a>(<a href="builtins.html#object">builtins.object</a>)
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="scipy._lib._ccallback.html#LowLevelCallable">scipy._lib._ccallback.LowLevelCallable</a>
+</font></dt></dl>
+</dd>
+</dl>
+ <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="LowLevelCallable">class <strong>LowLevelCallable</strong></a>(<a href="builtins.html#tuple">builtins.tuple</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt><a href="#LowLevelCallable">LowLevelCallable</a>(function,&nbsp;user_data=None,&nbsp;signature=None)<br>
+&nbsp;<br>
+Low-level&nbsp;callback&nbsp;function.<br>
+&nbsp;<br>
+Some&nbsp;functions&nbsp;in&nbsp;SciPy&nbsp;take&nbsp;as&nbsp;arguments&nbsp;callback&nbsp;functions,&nbsp;which<br>
+can&nbsp;either&nbsp;be&nbsp;python&nbsp;callables&nbsp;or&nbsp;low-level&nbsp;compiled&nbsp;functions.&nbsp;Using<br>
+compiled&nbsp;callback&nbsp;functions&nbsp;can&nbsp;improve&nbsp;performance&nbsp;somewhat&nbsp;by<br>
+avoiding&nbsp;wrapping&nbsp;data&nbsp;in&nbsp;Python&nbsp;objects.<br>
+&nbsp;<br>
+Such&nbsp;low-level&nbsp;functions&nbsp;in&nbsp;SciPy&nbsp;are&nbsp;wrapped&nbsp;in&nbsp;`<a href="#LowLevelCallable">LowLevelCallable</a>`<br>
+objects,&nbsp;which&nbsp;can&nbsp;be&nbsp;constructed&nbsp;from&nbsp;function&nbsp;pointers&nbsp;obtained&nbsp;from<br>
+ctypes,&nbsp;cffi,&nbsp;Cython,&nbsp;or&nbsp;contained&nbsp;in&nbsp;Python&nbsp;`PyCapsule`&nbsp;objects.<br>
+&nbsp;<br>
+..&nbsp;seealso::<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;Functions&nbsp;accepting&nbsp;low-level&nbsp;callables:<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;`scipy.integrate.quad`,&nbsp;`scipy.ndimage.generic_filter`,<br>
+&nbsp;&nbsp;&nbsp;`scipy.ndimage.generic_filter1d`,&nbsp;`scipy.ndimage.geometric_transform`<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;Usage&nbsp;examples:<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;:ref:`ndimage-ccallbacks`,&nbsp;:ref:`quad-callbacks`<br>
+&nbsp;<br>
+Parameters<br>
+----------<br>
+function&nbsp;:&nbsp;{PyCapsule,&nbsp;ctypes&nbsp;function&nbsp;pointer,&nbsp;cffi&nbsp;function&nbsp;pointer}<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Low-level&nbsp;callback&nbsp;function.<br>
+user_data&nbsp;:&nbsp;{PyCapsule,&nbsp;ctypes&nbsp;void&nbsp;pointer,&nbsp;cffi&nbsp;void&nbsp;pointer}<br>
+&nbsp;&nbsp;&nbsp;&nbsp;User&nbsp;data&nbsp;to&nbsp;pass&nbsp;on&nbsp;to&nbsp;the&nbsp;callback&nbsp;function.<br>
+signature&nbsp;:&nbsp;str,&nbsp;optional<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Signature&nbsp;of&nbsp;the&nbsp;function.&nbsp;If&nbsp;omitted,&nbsp;determined&nbsp;from&nbsp;*function*,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;possible.<br>
+&nbsp;<br>
+Attributes<br>
+----------<br>
+function<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Callback&nbsp;function&nbsp;given.<br>
+user_data<br>
+&nbsp;&nbsp;&nbsp;&nbsp;User&nbsp;data&nbsp;given.<br>
+signature<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Signature&nbsp;of&nbsp;the&nbsp;function.<br>
+&nbsp;<br>
+Methods<br>
+-------<br>
+from_cython<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Class&nbsp;method&nbsp;for&nbsp;constructing&nbsp;callables&nbsp;from&nbsp;Cython&nbsp;C-exported<br>
+&nbsp;&nbsp;&nbsp;&nbsp;functions.<br>
+&nbsp;<br>
+Notes<br>
+-----<br>
+The&nbsp;argument&nbsp;``function``&nbsp;can&nbsp;be&nbsp;one&nbsp;of:<br>
+&nbsp;<br>
+-&nbsp;PyCapsule,&nbsp;whose&nbsp;name&nbsp;contains&nbsp;the&nbsp;C&nbsp;function&nbsp;signature<br>
+-&nbsp;ctypes&nbsp;function&nbsp;pointer<br>
+-&nbsp;cffi&nbsp;function&nbsp;pointer<br>
+&nbsp;<br>
+The&nbsp;signature&nbsp;of&nbsp;the&nbsp;low-level&nbsp;callback&nbsp;must&nbsp;match&nbsp;one&nbsp;of&nbsp;those&nbsp;expected<br>
+by&nbsp;the&nbsp;routine&nbsp;it&nbsp;is&nbsp;passed&nbsp;to.<br>
+&nbsp;<br>
+If&nbsp;constructing&nbsp;low-level&nbsp;functions&nbsp;from&nbsp;a&nbsp;PyCapsule,&nbsp;the&nbsp;name&nbsp;of&nbsp;the<br>
+capsule&nbsp;must&nbsp;be&nbsp;the&nbsp;corresponding&nbsp;signature,&nbsp;in&nbsp;the&nbsp;format::<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;return_type&nbsp;(arg1_type,&nbsp;arg2_type,&nbsp;...)<br>
+&nbsp;<br>
+For&nbsp;example::<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;"void&nbsp;(double)"<br>
+&nbsp;&nbsp;&nbsp;&nbsp;"double&nbsp;(double,&nbsp;int&nbsp;*,&nbsp;void&nbsp;*)"<br>
+&nbsp;<br>
+The&nbsp;context&nbsp;of&nbsp;a&nbsp;PyCapsule&nbsp;passed&nbsp;in&nbsp;as&nbsp;``function``&nbsp;is&nbsp;used&nbsp;as&nbsp;``user_data``,<br>
+if&nbsp;an&nbsp;explicit&nbsp;value&nbsp;for&nbsp;``user_data``&nbsp;was&nbsp;not&nbsp;given.<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="scipy._lib._ccallback.html#LowLevelCallable">LowLevelCallable</a></dd>
+<dd><a href="builtins.html#tuple">builtins.tuple</a></dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="LowLevelCallable-__getitem__"><strong>__getitem__</strong></a>(self, idx)</dt><dd><tt>Return&nbsp;self[key].</tt></dd></dl>
+
+<dl><dt><a name="LowLevelCallable-__repr__"><strong>__repr__</strong></a>(self)</dt><dd><tt>Return&nbsp;repr(self).</tt></dd></dl>
+
+<hr>
+Class methods defined here:<br>
+<dl><dt><a name="LowLevelCallable-from_cython"><strong>from_cython</strong></a>(module, name, user_data=None, signature=None)<font color="#909090"><font face="helvetica, arial"> from <a href="builtins.html#type">builtins.type</a></font></font></dt><dd><tt>Create&nbsp;a&nbsp;low-level&nbsp;callback&nbsp;function&nbsp;from&nbsp;an&nbsp;exported&nbsp;Cython&nbsp;function.<br>
+&nbsp;<br>
+Parameters<br>
+----------<br>
+module&nbsp;:&nbsp;module<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Cython&nbsp;module&nbsp;where&nbsp;the&nbsp;exported&nbsp;function&nbsp;resides<br>
+name&nbsp;:&nbsp;str<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Name&nbsp;of&nbsp;the&nbsp;exported&nbsp;function<br>
+user_data&nbsp;:&nbsp;{PyCapsule,&nbsp;ctypes&nbsp;void&nbsp;pointer,&nbsp;cffi&nbsp;void&nbsp;pointer},&nbsp;optional<br>
+&nbsp;&nbsp;&nbsp;&nbsp;User&nbsp;data&nbsp;to&nbsp;pass&nbsp;on&nbsp;to&nbsp;the&nbsp;callback&nbsp;function.<br>
+signature&nbsp;:&nbsp;str,&nbsp;optional<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Signature&nbsp;of&nbsp;the&nbsp;function.&nbsp;If&nbsp;omitted,&nbsp;determined&nbsp;from&nbsp;*function*.</tt></dd></dl>
+
+<hr>
+Static methods defined here:<br>
+<dl><dt><a name="LowLevelCallable-__new__"><strong>__new__</strong></a>(cls, function, user_data=None, signature=None)</dt><dd><tt>Create&nbsp;and&nbsp;return&nbsp;a&nbsp;new&nbsp;object.&nbsp;&nbsp;See&nbsp;help(type)&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+<hr>
+Readonly properties defined here:<br>
+<dl><dt><strong>function</strong></dt>
+</dl>
+<dl><dt><strong>signature</strong></dt>
+</dl>
+<dl><dt><strong>user_data</strong></dt>
+</dl>
+<hr>
+Methods inherited from <a href="builtins.html#tuple">builtins.tuple</a>:<br>
+<dl><dt><a name="LowLevelCallable-__add__"><strong>__add__</strong></a>(self, value, /)</dt><dd><tt>Return&nbsp;self+value.</tt></dd></dl>
+
+<dl><dt><a name="LowLevelCallable-__contains__"><strong>__contains__</strong></a>(self, key, /)</dt><dd><tt>Return&nbsp;key&nbsp;in&nbsp;self.</tt></dd></dl>
+
+<dl><dt><a name="LowLevelCallable-__eq__"><strong>__eq__</strong></a>(self, value, /)</dt><dd><tt>Return&nbsp;self==value.</tt></dd></dl>
+
+<dl><dt><a name="LowLevelCallable-__ge__"><strong>__ge__</strong></a>(self, value, /)</dt><dd><tt>Return&nbsp;self&gt;=value.</tt></dd></dl>
+
+<dl><dt><a name="LowLevelCallable-__getattribute__"><strong>__getattribute__</strong></a>(self, name, /)</dt><dd><tt>Return&nbsp;getattr(self,&nbsp;name).</tt></dd></dl>
+
+<dl><dt><a name="LowLevelCallable-__getnewargs__"><strong>__getnewargs__</strong></a>(self, /)</dt></dl>
+
+<dl><dt><a name="LowLevelCallable-__gt__"><strong>__gt__</strong></a>(self, value, /)</dt><dd><tt>Return&nbsp;self&gt;value.</tt></dd></dl>
+
+<dl><dt><a name="LowLevelCallable-__hash__"><strong>__hash__</strong></a>(self, /)</dt><dd><tt>Return&nbsp;hash(self).</tt></dd></dl>
+
+<dl><dt><a name="LowLevelCallable-__iter__"><strong>__iter__</strong></a>(self, /)</dt><dd><tt>Implement&nbsp;iter(self).</tt></dd></dl>
+
+<dl><dt><a name="LowLevelCallable-__le__"><strong>__le__</strong></a>(self, value, /)</dt><dd><tt>Return&nbsp;self&lt;=value.</tt></dd></dl>
+
+<dl><dt><a name="LowLevelCallable-__len__"><strong>__len__</strong></a>(self, /)</dt><dd><tt>Return&nbsp;len(self).</tt></dd></dl>
+
+<dl><dt><a name="LowLevelCallable-__lt__"><strong>__lt__</strong></a>(self, value, /)</dt><dd><tt>Return&nbsp;self&lt;value.</tt></dd></dl>
+
+<dl><dt><a name="LowLevelCallable-__mul__"><strong>__mul__</strong></a>(self, value, /)</dt><dd><tt>Return&nbsp;self*value.</tt></dd></dl>
+
+<dl><dt><a name="LowLevelCallable-__ne__"><strong>__ne__</strong></a>(self, value, /)</dt><dd><tt>Return&nbsp;self!=value.</tt></dd></dl>
+
+<dl><dt><a name="LowLevelCallable-__rmul__"><strong>__rmul__</strong></a>(self, value, /)</dt><dd><tt>Return&nbsp;value*self.</tt></dd></dl>
+
+<dl><dt><a name="LowLevelCallable-count"><strong>count</strong></a>(self, value, /)</dt><dd><tt>Return&nbsp;number&nbsp;of&nbsp;occurrences&nbsp;of&nbsp;value.</tt></dd></dl>
+
+<dl><dt><a name="LowLevelCallable-index"><strong>index</strong></a>(self, value, start=0, stop=9223372036854775807, /)</dt><dd><tt>Return&nbsp;first&nbsp;index&nbsp;of&nbsp;value.<br>
+&nbsp;<br>
+Raises&nbsp;ValueError&nbsp;if&nbsp;the&nbsp;value&nbsp;is&nbsp;not&nbsp;present.</tt></dd></dl>
+
+<hr>
+Class methods inherited from <a href="builtins.html#tuple">builtins.tuple</a>:<br>
+<dl><dt><a name="LowLevelCallable-__class_getitem__"><strong>__class_getitem__</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> from <a href="builtins.html#type">builtins.type</a></font></font></dt><dd><tt>See&nbsp;<a href="https://www.python.org/dev/peps/pep-0585/">PEP&nbsp;585</a></tt></dd></dl>
+
+</td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#eeaa77">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Functions</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#eeaa77"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt><a name="-show_config"><strong>show_config</strong></a> = show(mode='stdout')</dt><dd><tt>Show&nbsp;libraries&nbsp;and&nbsp;system&nbsp;information&nbsp;on&nbsp;which&nbsp;SciPy&nbsp;was&nbsp;built<br>
+and&nbsp;is&nbsp;being&nbsp;used<br>
+&nbsp;<br>
+Parameters<br>
+----------<br>
+mode&nbsp;:&nbsp;{`'stdout'`,&nbsp;`'dicts'`},&nbsp;optional.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Indicates&nbsp;how&nbsp;to&nbsp;display&nbsp;the&nbsp;config&nbsp;information.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;`'stdout'`&nbsp;prints&nbsp;to&nbsp;console,&nbsp;`'dicts'`&nbsp;returns&nbsp;a&nbsp;dictionary<br>
+&nbsp;&nbsp;&nbsp;&nbsp;of&nbsp;the&nbsp;configuration.<br>
+&nbsp;<br>
+Returns<br>
+-------<br>
+out&nbsp;:&nbsp;{`dict`,&nbsp;`None`}<br>
+&nbsp;&nbsp;&nbsp;&nbsp;If&nbsp;mode&nbsp;is&nbsp;`'dicts'`,&nbsp;a&nbsp;dict&nbsp;is&nbsp;returned,&nbsp;else&nbsp;None<br>
+&nbsp;<br>
+Notes<br>
+-----<br>
+1.&nbsp;The&nbsp;`'stdout'`&nbsp;mode&nbsp;will&nbsp;give&nbsp;more&nbsp;readable<br>
+&nbsp;&nbsp;&nbsp;output&nbsp;if&nbsp;``pyyaml``&nbsp;is&nbsp;installed</tt></dd></dl>
+</td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#55aa55">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Data</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#55aa55"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><strong>test</strong> = &lt;scipy._lib._testutils.PytestTester object&gt;</td></tr></table>
+</body></html>
